@@ -11,6 +11,7 @@ The system is split into three layers:
 3. **Database Tier**: Stores and retrieves application data.
 
 ## Demo Video
+Click the thumbnail to play the video:
 [![Demo Video](application-code/web-tier/src/assets/3TierArch.png)](https://drive.google.com/file/d/1TBPylRpV8xMjKm8ITY1wQZrNzOMi_O-6/view?usp=sharing)
 
 ## Architecture Components
