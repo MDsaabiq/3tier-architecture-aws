@@ -10,6 +10,9 @@ The system is split into three layers:
 2. **Application Tier**: Processes business logic and data access.
 3. **Database Tier**: Stores and retrieves application data.
 
+## Demo Video
+[![Demo Video](application-code/web-tier/src/assets/3TierArch.png)](https://drive.google.com/file/d/1TBPylRpV8xMjKm8ITY1wQZrNzOMi_O-6/view?usp=sharing)
+
 ## Architecture Components
 1. **Public Load Balancer**: Entry point for client traffic, distributes requests to web servers, and performs health checks.
 2. **Web Tier**: Nginx serves the React build and proxies API calls to the internal load balancer.
