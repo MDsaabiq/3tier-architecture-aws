@@ -1,0 +1,202 @@
+.db-page {
+  width: min(1100px, 92vw);
+  margin: 0 auto;
+  text-align: left;
+  color: #eef0ff;
+}
+
+.db-hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0 1.5rem;
+  align-items: center;
+}
+
+.db-hero__text {
+  text-align: left;
+}
+
+.db-hero__eyebrow {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: #8d93ff;
+  margin: 0 0 0.75rem;
+}
+
+.db-hero__title {
+  font-size: 2.4rem;
+  margin: 0 0 0.75rem;
+  text-transform: none;
+}
+
+.db-hero__subtitle {
+  font-size: 1rem;
+  color: #c6cbff;
+  margin: 0 0 1.5rem;
+}
+
+.db-hero__actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.db-hero__card {
+  background: rgba(14, 14, 40, 0.85);
+  border: 1px solid rgba(91, 99, 255, 0.3);
+  border-radius: 16px;
+  padding: 1.5rem;
+  display: grid;
+  gap: 1rem;
+  box-shadow: 0 20px 40px rgba(6, 8, 40, 0.45);
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.stat__label {
+  font-size: 0.85rem;
+  color: #9fa6ff;
+}
+
+.stat__value {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.db-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  background: rgba(10, 10, 40, 0.7);
+  border: 1px solid rgba(91, 99, 255, 0.25);
+  border-radius: 16px;
+  padding: 1.25rem;
+  align-items: end;
+  margin-bottom: 1.75rem;
+}
+
+.db-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.db-form__field label {
+  font-size: 0.85rem;
+  color: #b0b6ff;
+}
+
+.db-form__field input {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(140, 150, 255, 0.3);
+  border-radius: 10px;
+  padding: 0.65rem 0.85rem;
+  color: #ffffff;
+  font-size: 0.95rem;
+}
+
+.db-form__field input:focus {
+  outline: none;
+  border-color: #7b84ff;
+  box-shadow: 0 0 0 3px rgba(123, 132, 255, 0.2);
+}
+
+.btn {
+  border: none;
+  border-radius: 10px;
+  padding: 0.7rem 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #5563ff, #7b84ff);
+  color: #ffffff;
+  box-shadow: 0 10px 20px rgba(85, 99, 255, 0.35);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  border: 1px solid rgba(140, 150, 255, 0.3);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: #b8beff;
+  border: 1px dashed rgba(140, 150, 255, 0.4);
+}
+
+.db-table {
+  background: rgba(10, 10, 40, 0.7);
+  border: 1px solid rgba(91, 99, 255, 0.25);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.db-table__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.db-table__header h2 {
+  margin: 0;
+  text-transform: none;
+  font-size: 1.25rem;
+}
+
+.db-table__count {
+  font-size: 0.85rem;
+  color: #9fa6ff;
+}
+
+.db-table__wrap {
+  max-height: 420px;
+  overflow: auto;
+  border-radius: 12px;
+}
+
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.transactions-table th,
+.transactions-table td {
+  padding: 0.85rem 0.75rem;
+  text-align: left;
+}
+
+.transactions-table thead th {
+  position: sticky;
+  top: 0;
+  background: #161a4b;
+  color: #c5cbff;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+  z-index: 1;
+}
+
+.transactions-table tbody tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.transactions-table tbody tr:hover {
+  background: rgba(85, 99, 255, 0.1);
+}
